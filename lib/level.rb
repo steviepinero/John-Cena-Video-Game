@@ -11,7 +11,7 @@ class Level
     @window.caption         = "The Champ is Here"
     @background_music       = Song.new(@window, "media/4pm.mp3")
     @map                    = Map.new(@window)
-    @player, @gems, @bugs, @key = read_level(level, ROWS, COLUMNS)
+    @player,  @bugs, @key = read_level(level, ROWS, COLUMNS)
     @background_music.play(true) unless ENV['DISABLE_SOUND'] == 'true'
   end
 
@@ -21,11 +21,11 @@ class Level
     @player.move_up     if @window.button_down? KbUp
     @player.move_down   if @window.button_down? KbDown
 
-    @player.collect_gems(@gems)
+
     @player.collect_key(@key) unless @player.key_collected?
     if hit_by_bug?
       game_over
-    elsif @gems.size == 0 && @player.key_collected?
+    elsif  @player.key_collected?
       level_finished
     end
     @bugs.each{ |bug| bug.update }
@@ -33,7 +33,7 @@ class Level
 
   def draw
     @map.draw
-    (@gems + @bugs).each do |e|
+    (@bugs).each do |e|
       e.draw
     end
     @key.draw unless @player.key_collected?
@@ -73,7 +73,7 @@ class Level
 
   def read_level(level, rows, columns)
     player = nil
-    gems   = []
+
     bugs   = []
     key    = nil
     level  = File.open(level[:path]).readlines[1..-1]
@@ -84,8 +84,7 @@ class Level
         case tile_type
           when 'P'
             player = Player.new(@window, self, column, row)
-          when 'G'
-            gems << ColoredGem.new(@window, column, row)
+
           when 'B'
             bugs << Bug.new(@window, self, column, row)
           when 'K'
@@ -96,7 +95,7 @@ class Level
       end
     end
 
-    [player, gems, bugs, key]
+    [player,  bugs, key]
   end
 
 
