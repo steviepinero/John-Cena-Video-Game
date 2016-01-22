@@ -3,7 +3,7 @@ class Menu
     @window = window
     @title = Image.from_text(
       @window,
-      "Practice",
+      "John Cena Is BACK ",
       Gosu::default_font_name,
       150,
       10,
