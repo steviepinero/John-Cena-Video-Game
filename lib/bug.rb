@@ -10,14 +10,15 @@ class Bug
   def initialize(window, level, column, row)
     @window = window
     @level  = level
-    @image  = Image.new(@window, "media/bug.png", true)
+    @imagenumber = rand(2)
+    @image  = Image.new(@window, "media/#{@imagenumber}.png", true)
     @width  = @image.width
     @height = @image.height
     @offset_y = 65
     @x = column * @image.width
     @y = row * 75 - @offset_y
     @direction = :down
-    @walking_speed = rand(2..5)
+    @walking_speed = rand(1..3)
   end
 
   def hit_box(x, y)

@@ -8,11 +8,11 @@ class Level
   def initialize(window, level)
     @level                  = level
     @window                 = window
-    @window.caption         = "The Champ is Here"
-    @background_music       = Song.new(@window, "media/4pm.mp3")
+    @window.caption         = "Press space to Cena"
+    @background_music       = Song.new(@window, "media/1.mp3")
     @map                    = Map.new(@window)
     @player,  @bugs, @key = read_level(level, ROWS, COLUMNS)
-    @background_music.play(true) unless ENV['DISABLE_SOUND'] == 'true'
+    @background_music.play(true)
   end
 
   def update

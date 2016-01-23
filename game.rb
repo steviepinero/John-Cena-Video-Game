@@ -18,7 +18,7 @@ class Main < Window
   attr_accessor :controller
 
   def initialize
-    puts 'You can use puts to print out debugging information'
+    puts 'debugg info'
     super(WIDTH, HEIGHT, false)
     self.caption            = "Practice"
     @menu_controller        = Menu.new(self)
@@ -26,6 +26,7 @@ class Main < Window
     @level_finished_screen  = LevelFinishedScreen.new(self)
     @controller             = @menu_controller
     @levels                 = read_levels
+
     show_main_menu
   end
 
@@ -76,4 +77,8 @@ class Main < Window
 
 end
 
+puts "Do you like wrestling?"
+  gets.chomp
+    puts "This is about to blow your mind"
+    sleep(2)
 Main.new.show

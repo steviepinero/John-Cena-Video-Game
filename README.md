@@ -1,1 +1,1 @@
-Used ruby game tutorial and assets from it, edited code and some assets to make it more unique
+Used ruby  gosu tutorial and assets from it. Images will eventually change
