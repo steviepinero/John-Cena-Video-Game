@@ -1,12 +1,12 @@
-#: grass, G: green gem
+#: grass, l: left r: right x:bottom t:top  m: ringmat a:topleft c:top right e: bottom left f: bottomright
 ##WWWWWWWWWWWDD
-##WSSSSSSSSKWDD
-###SSSSSSSSS#DD
-###SSSSBSSSS##D
-##WSBSSSSSSSW#D
-#BWSSSSSBSSSWDD
-##WSSSPSSBSSWBD
-###SSSSSSSSS#DD
-###SSBSSSSSS#DD
-#PWWWWWWWWWWWSS
+##WatttttttcWDD
+###lmmmmmKmr#DD
+###lmmBmmmmr##D
+##WlBmmmBmmrW#D
+##WlmmmmmmmrWDD
+##WlmmBmmBmrWDD
+###lmBmmmmmr#DD
+###exxxxxxxf#DD
+#P#WWWWWWWWWWSS
 ###############

@@ -1,5 +1,5 @@
-#TODO add differnt wrestlers, change bug class to opponent class, Add timer?
-
+#TODO add differnt wrestlers, change bug class to opponent class, Add health?
+#                                       too lazy, staying "bug"
 
 
 class Bug
@@ -10,7 +10,7 @@ class Bug
   def initialize(window, level, column, row)
     @window = window
     @level  = level
-    @imagenumber = rand(2)
+    @imagenumber = rand(3)
     @image  = Image.new(@window, "media/#{@imagenumber}.png", true)
     @width  = @image.width
     @height = @image.height

@@ -1,4 +1,4 @@
-require 'RMagick'
+# require 'RMagick'
 
 class HealthBar
         attr_accessor :health, :x, :y, :z

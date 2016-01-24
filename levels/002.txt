@@ -1,12 +1,12 @@
-#: grass, G: gem, W: water, D: dirt, P: player, K: key, S: stone
+: grass, l: left r: right x:bottom t:top  m: ringmat a:topleft c:top right e: bottom left f: bottomright K: BELT
 ##WWWWWWWWWWWDD
-##WSSSSSSSSKWDD
-##WSSSSSSSSSWDD
-##WSBSSBSBSSW#D
-##WSBSSBSSSSW#D
-##WSSSSSSSSSWDD
-##WSSSBSSBSSWDD
-##WSSSSSSSSSWDD
-##WPSSSSSBSSWDD
+##WatttttttcWDD
+##WlmmmmmmKrWDD
+##WlBmmBmBmrW#D
+##WlBmmBmmmrW#D
+##WlmmmmmmmrWDD
+##WlmmBmmBmrWDD
+##WlPmmmmBmrWDD
+##WexxxxxxxfWDD
 ##WWWWWWWWWWWSS
 ###############
