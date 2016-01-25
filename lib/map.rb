@@ -2,7 +2,7 @@ class Map
 
   def initialize(window)
     @window = window
-    @tiles = [] #setup_tiles(window, rows, columns)
+    @tiles = [] #setup tiles(window, rows, columns)
     @water_image = Image.new(window, "media/water.png", true)
     @grass_image = Image.new(window, "media/grass_block.png", true)
     @tile_specs   = {
@@ -20,7 +20,8 @@ class Map
       "c" => {:image => Image.new(window, "media/topright.png",    true)  , :walkable => true  },
       "e" => {:image => Image.new(window, "media/bottomleft.png",  true)  , :walkable => true  },
       "f" => {:image => Image.new(window, "media/bottomright.png", true)  , :walkable => true  },
-      "F" => {:image => Image.new(window, "media/floor.png", true)  , :walkable => true  },
+      # "F" => {:image => Image.new(window, "media/floor.png",       true)  , :walkable => true  },ugly as hell
+
     }
   end
 

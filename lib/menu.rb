@@ -1,14 +1,9 @@
 class Menu
   def initialize(window)
     @window = window
-    @title = Image.from_text(
+    @title = Image.new(
       @window,
-      "John Cena Is BACK ",
-      Gosu::default_font_name,
-      150,
-      10,
-      WIDTH,
-      :center
+      "media/menu.jpg"
     )
   end
 

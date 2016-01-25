@@ -2,14 +2,9 @@ class GameOverScreen
 
   def initialize(window)
     @window = window
-    @title = Image.from_text(
+    @title = Image.new(
       @window,
-      "Game Over !!!!",
-      Gosu::default_font_name,
-      150,
-      10,
-      WIDTH,
-      :center
+      "media/gameover.jpg"
     )
   end
 

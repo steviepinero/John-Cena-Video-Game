@@ -10,7 +10,7 @@ class Bug
   def initialize(window, level, column, row)
     @window = window
     @level  = level
-    @imagenumber = rand(3)
+    @imagenumber = rand(4)
     @image  = Image.new(@window, "media/#{@imagenumber}.png", true)
     @width  = @image.width
     @height = @image.height
