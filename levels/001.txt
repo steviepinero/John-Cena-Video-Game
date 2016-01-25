@@ -1,6 +1,6 @@
 #: grass, l: left r: right x:bottom t:top  m: ringmat a:topleft c:top right e: bottom left f: bottomright
 ##WWWWWWWWWWWDD
-##WatttttttcWDD
+##Watttttttc#DD
 ###lmmmmmKmr#DD
 ###lmmBmmmmr##D
 ##WlBmmmBmmrW#D

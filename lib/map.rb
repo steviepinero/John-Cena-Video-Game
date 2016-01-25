@@ -20,6 +20,7 @@ class Map
       "c" => {:image => Image.new(window, "media/topright.png",    true)  , :walkable => true  },
       "e" => {:image => Image.new(window, "media/bottomleft.png",  true)  , :walkable => true  },
       "f" => {:image => Image.new(window, "media/bottomright.png", true)  , :walkable => true  },
+      "F" => {:image => Image.new(window, "media/floor.png", true)  , :walkable => true  },
     }
   end
 
