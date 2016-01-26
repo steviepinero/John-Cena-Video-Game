@@ -9,7 +9,7 @@ class GameOverScreen
   end
 
   def draw
-    @title.draw(0,(HEIGHT - 300) / 2,0)
+    @title.draw(0,0,0)
   end
 
   def update ; end

@@ -8,7 +8,7 @@ class Menu
   end
 
   def draw
-    @title.draw(0,(HEIGHT - 300) / 2,0) #title.draw(0,0,0) TODO make full size image for each menu
+    @title.draw(0,0,0) #TODO make full size image for each menu
   end
 
   def update ; end
