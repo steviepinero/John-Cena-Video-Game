@@ -1,4 +1,4 @@
-#TODO add differnt wrestlers, change bug class to opponent class, Add health?
+#TODO add differnt wrestlers, change Opponent class to opponent class, Add health?
 #                                       too lazy, staying "bug"
 
 
